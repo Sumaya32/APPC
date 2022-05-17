@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APPC</title>
+  <link rel="icon" href="img/circle.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/Bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../css/OnzeCss/game.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-menu p-4">
+      <div class="container-fluid">
+        <a href="./index.html"><img src="/img/TheOneLogo.png" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+
+        <div class="row col-lg-12 col-sm-12 theone">
+          <img src="/img/TheOne.png">
+        </div>
+
+        <div class="row col-sm-12 col-lg-12 quote">
+          <h1 id="quote"></h1>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+          <button class="bt">
+
+            <div id="1" class="dot"></div>
+            <div id="2" class="dot"></div>
+            <div id="3" class="dot"></div>
+            <div id="4" class="dot"></div>
+            <div id="5" class="dot"></div>
+            <div id="6" class="dot"></div>
+            <div id="7" class="dot"></div>
+            <div id="8" class="dot"></div>
+            <div id="9" class="dot"></div>
+            <div id="10" class="dot"></div>
+
+            <p id="score"></p>
+
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="row col-lg-6 filmEnKarakter karakter">
+          <h2>Character</h2>
+          <div>
+            <input type="radio" name="character" value="iets" id="kar0">
+            <label for="character" name="radio" id="char0"></label>
+          </div>
+          <div>
+            <input type="radio" name="character" value="iets" id="kar1">
+            <label for="character" name="radio" id="char1"></label>
+          </div>
+          <div>
+            <input type="radio" name="character" value="iets" id="kar2">
+            <label for="character" name="radio" id="char2"></label>
+          </div>
+        </div>
+
+        <div class="row col-lg-6 filmEnKarakter film">
+          <h2>Movie</h2>
+          <div>
+            <input type="radio" name="movie" value="iets" id="movie0">
+            <label for="movie" name="radio" id="mov0"></label>
+          </div>
+          <div>
+            <input type="radio" name="movie" value="iets" id="movie1">
+            <label for="movie" name="radio" id="mov1"></label>
+          </div>
+          <div>
+            <input type="radio" name="movie" value="iets" id="movie2">
+            <label for="movie" name="radio" id="mov2"></label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+          <button class="bt" id="answer" onclick="confirmChoiceButton()">Confirm choice</button>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+          <button class="bt"><a class="hulpknop" href="/hulp.html" target="_blank">Help</a></button>
+        </div>
+
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="main-footer widgets-dark typo-light">
+      <div class="container justify-content-center">
+        <div class="row">
+          <div class="row col-sm-12 col-lg-6 p-3">
+            <div class="headline1 ">
+
+              <h4 class="contact text-center">CONTACT US</h4>
+
+              <address class="adres text-center">
+                <h6><span style="font-weight: bold;">Phone: </span> 0358 256 546</h6>
+                <h6><span style="font-weight: bold;">Email: </span><a href="mailto: info@appc.com">info@appc.com</a>
+                </h6>
+                <h6><span style="font-weight: bold;">Adres: </span>Lange Nieuwstraat 101, <br> 2000 Antwerpen</h6>
+              </address>
+
+            </div>
+          </div>
+
+          <div class="row col-sm-12 col-lg-6 p-1">
+
+            <h4 class="follow text-center">FOLLOW US</h4>
+
+            <ul class="social-list">
+              <div class="row justify-content-center">
+
+                <li class="lis-icon row col-4 justify-content-center">
+                  <div class="maincard p-0">
+                    <div class="thecard">
+                      <div class="thefront text-center py-4 facebook">
+                        <div class="social-icon"> <i class="fa fa-facebook fa-2x"></i> </div>
+                      </div>
+                      <div class="theback py-4 facebook">
+                        <div class="social-text"> <small class="font-weight-bold">Facebook</small> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="lis-icon row col-4 justify-content-center">
+                  <div class="maincard p-0">
+                    <div class="thecard">
+                      <div class="thefront text-center py-4 instagram">
+                        <div class="social-icon"> <i class="fa fa-instagram fa-2x"></i> </div>
+                      </div>
+                      <div class="theback py-4 text-center instagram">
+                        <div class="social-text"> <small class="font-weight-bold">Instagram</small> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="lis-icon row col-4 justify-content-center">
+                  <div class="maincard p-0">
+                    <div class="thecard">
+                      <div class="thefront text-center py-4 twitter">
+                        <div class="social-icon"> <i class="fa fa-twitter fa-2x"></i> </div>
+                      </div>
+                      <div class="theback py-4 text-center twitter">
+                        <div class="social-text"> <small class="font-weight-bold">Twitter</small> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="lis-icon row col-4 justify-content-center">
+                  <div class="maincard p-0">
+                    <div class="thecard">
+                      <div class="thefront text-center py-4 youtube">
+                        <div class="social-icon"> <i class="fa fa-youtube fa-2x"></i> </div>
+                      </div>
+                      <div class="theback py-4 text-center youtube">
+                        <div class="social-text"> <small class="font-weight-bold">Youtube</small> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="lis-icon row col-4 justify-content-center">
+                  <div class="maincard p-0">
+                    <div class="thecard">
+                      <div class="thefront text-center py-4 whatsapp">
+                        <div class="social-icon"> <i class="fa fa-whatsapp fa-2x"></i> </div>
+                      </div>
+                      <div class="theback py-4 text-center whatsapp">
+                        <div class="social-text"> <small class="font-weight-bold">Whatsapp</small> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="lis-icon row col-4 justify-content-center">
+                  <div class="maincard p-0">
+                    <div class="thecard">
+                      <div class="thefront text-center py-4 pinterest">
+                        <div class="social-icon"> <i class="fa fa-pinterest fa-2x"></i> </div>
+                      </div>
+                      <div class="theback py-4 text-center pinterest">
+                        <div class="social-text"> <small class="font-weight-bold">Pinterest</small> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </div>
+            </ul>
+          </div>
+
+          <div class="text-center p-0">
+            <h6><span style="font-weight: bold;">©2021 Copyright: </span><a href="./index.html">appc.com</a></h6>
+          </div>
+
+        </div>
+      </div>
+  </footer>
+
+
+  <script src="../js/Bootstrap/bootstrap.js"></script>
+  <script src="../js/OnzeJs/functionaliteiten.js"></script>
+
+</body>
+
+</html>

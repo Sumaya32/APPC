@@ -1,0 +1,208 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*Navigatie (header)*/
+.nav-menu {
+  background: linear-gradient(-45deg, gold, #393448, black);
+  background-size: 400% 400%;
+  animation: gradient 8s ease-in-out infinite;
+  margin-bottom: 50px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0.9;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*Body Section*/
+body {
+  background: url(/img/thelord-poster6.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*The one tekst*/
+.theone {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/*Navigatie logo*/
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+}
+
+/*Start button*/
+.bt {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-width: 220px;
+  width: auto;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: 5px solid gold;
+  background-color: black;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.bt:hover {
+  position: relative;
+  background: #393448;
+  transition: all 0.35s;
+  font-weight: bold;
+}
+
+/*Footer Section*/
+footer .main-footer {
+  width: 100%;
+  max-height: 100%;
+  background: linear-gradient(-45deg, gold, #393448, black);
+  background-size: 400% 400%;
+  animation: gradient 8s ease-in-out infinite;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 0.9;
+  color: white;
+}
+
+/*De (Div) die de voorkant van de iconinhoud is*/
+.social-icon {
+  margin-top: -15px;
+}
+
+/*De (Div) met als inhoud de small van de achterkaart */
+.social-text {
+  margin-top: -10px;
+}
+
+/*De (Small) met als inhoud de tekst van de achterkaart*/
+small {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/*Alle li*/
+.lis-icon {
+  margin-bottom: 15px;
+}
+
+/*Alle cards*/
+.maincard {
+  position: relative;
+  width: 55px;
+  height: 40px;
+}
+
+/*De (Div) die de thefront en de theback inhoudt*/
+.thecard {
+  background-color: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  padding: 4px;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg)
+}
+
+/*De (Div) van de voorkaart*/
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #eee;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  padding: 4px;
+}
+
+/*De (Div) van de achterkaart*/
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: hidden;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  padding: 4px;
+}
+
+/*De icons*/
+.facebook {
+  background: #3b5998;
+}
+
+.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.youtube {
+  background: #ff0000
+}
+
+.twitter {
+  background: #1DA1F2;
+}
+
+.whatsapp {
+  background: #4dc247
+}
+
+.pinterest {
+  background: #cb2027
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    margin-bottom: -50px;
+  }
+  .div-knoppen :nth-child(3) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+ .theone {
+   margin-bottom: 300px;
+ }
+}
+
+ @media (max-width: 540px) {
+  .theone {
+    margin-bottom: 20px;
+  }
+}
+
+@media (width: 768px) {
+.div-knoppen{
+  margin-top:-250px;
+}
+}

@@ -1,0 +1,75 @@
+body {
+    background: url(/img/help.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.theone {
+    width: 400px;
+}
+
+.bt {
+    margin-bottom: 70px;
+}
+
+.footer {
+    position: relative;
+    margin-top: 50px;
+    bottom: 0;
+}
+
+textarea {
+    height: 500px;
+    width: 90%;
+}
+
+iframe {
+    height: 500px;
+    width: 90%;
+}
+
+.framearea {
+    margin-top: 50px;
+    margin-bottom: -100px;
+}
+
+.backbutton, .submitbutton {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .backbutton {
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        position: relative;
+        margin-bottom: -110px;
+      }
+
+    .submitbutton{
+        margin-bottom: 400px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+    .footer {
+        position: absolute;
+    }
+
+    .theone {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+  

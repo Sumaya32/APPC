@@ -1,0 +1,289 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*Navigation/Header Section*/
+
+.nav-menu{
+  background: linear-gradient(-45deg,gold, #393448, black);
+  background-size: 400% 400%;
+  animation: gradient 8s ease-in-out infinite;
+  margin-bottom: 100px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0.9;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+}
+
+/*Body Section*/
+
+body {
+  background: url(/img/backgroundstorypage.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.theone {
+  text-align: center;
+  width: 400px;
+}
+
+.quote {
+  position: relative;
+  margin-top: 50px;
+  min-height: 100px;
+  height:auto; 
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: 3px solid gold;
+  background-color: black;
+  opacity: 0.7;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*Film en Karakter kaart*/
+.filmEnKarakter {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 200px;
+  width: 360px;
+  color: black;
+  font-weight: bold;
+}
+
+.karakter {
+  margin-right: 25px;
+}
+
+.film {
+  margin-left: 25px;
+}
+
+@media (max-width: 1024px) {
+  .karakter {
+    margin-left: 25px;
+  }
+  .film {
+    margin-right: 26px;
+  }
+}
+
+/*Button */
+.bt {
+  position: relative;
+  margin-top: 50px;
+  min-width: 220px;
+  width: auto;
+  min-height: 50px;
+  height: auto;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: 5px solid gold;
+  background-color: black;
+  opacity: 0.7;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bt:hover {
+  position: relative;
+  background: #393448;
+  transition: all 0.35s;
+  font-weight: bold;
+  color: white;
+}
+
+.hulpknop {
+  text-decoration: none;
+  color: white;
+}
+
+.hulpknop:hover{
+  color: white;
+}
+
+/*Footer Section*/
+/*De footer*/
+footer .main-footer {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(-45deg,gold, #393448, black);
+  background-size: 400% 400%;
+  animation: gradient 8s ease-in-out infinite;
+  margin-top: -160px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.9;
+  color: white;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@media (min-width: 280px) {
+  body {
+    padding-bottom: 235px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*De (Div) die de voorkant van de iconinhoud is*/
+.social-icon {
+  margin-top: -15px;
+}
+
+/*De (Div) die als inhoud de small van de achterkaart heeft*/
+.social-text {
+  margin-top: -10px;
+}
+
+/*De (Small) heeft als inhoud de tekst van de achterkaart*/
+small {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/*Alle li*/
+.lis-icon {
+  margin-bottom: 15px;
+}
+
+/*Alle cards*/
+.maincard {
+  position: relative;
+  width: 55px;
+  height: 40px;
+}
+
+/*De (Div) die de thefront en de theback inhoudt*/
+.thecard {
+  background-color: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  padding: 4px;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg)
+}
+
+/*De (Div) van de voorkaart*/
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #eee;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  padding: 4px;
+}
+
+/*De (Div) van de achterkaart*/
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: hidden;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  padding: 4px;
+}
+
+/*De icons*/
+.facebook {
+  background: #3b5998;
+}
+
+.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.youtube {
+  background: #ff0000
+}
+
+.twitter {
+  background: #1DA1F2;
+}
+
+.whatsapp {
+  background: #4dc247
+}
+
+.pinterest {
+  background: #cb2027
+}
+
+.dot {
+  box-sizing: border-box;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: .125rem solid gold;
+  display: inline-block;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
